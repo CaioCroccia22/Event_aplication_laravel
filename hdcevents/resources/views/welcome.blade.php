@@ -29,5 +29,12 @@
         @for($i = 0; $i < count($arr); $i++)
         <p>{{$arr[$i]}}</p>
         @endfor
+
+
+        @php
+            $name = "Caio Croccia";
+            echo $name;
+        @endphp
+        {{-- Este é o comentário do blade --}}
     </body>
 </html>
