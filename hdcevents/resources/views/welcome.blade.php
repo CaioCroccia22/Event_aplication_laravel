@@ -20,5 +20,9 @@
         @endif
             <p>{{$nome}}</p>
 
+
+        @if($nome == "Caio")
+        <p>O {{$nome}} tem {{$idade}} anos</p>
+        @endif
     </body>
 </html>
