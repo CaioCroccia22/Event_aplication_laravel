@@ -35,6 +35,12 @@
             $name = "Caio Croccia";
             echo $name;
         @endphp
+
+        @foreach($nomes as $nome)
+        <p>{{$loop -> index}}</p>
+        <p>{{$nome}}</p>
+        @endforeach
+
         {{-- Este é o comentário do blade --}}
     </body>
 </html>

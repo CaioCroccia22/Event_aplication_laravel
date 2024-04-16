@@ -9,12 +9,16 @@ Route::get('/', function () {
 
     $arr = [1,2,3,4,5];
 
+    $nomes = ["Caio", "Maria", "Joao", "Paulo"];
+
 
 
     return view('welcome', [
         'nome' => $nome,
         'idade' => $idade, 
-        'arr' => $arr]);
+        'arr' => $arr,
+        'nomes' => $nomes
+    ]);
 });
 
 
