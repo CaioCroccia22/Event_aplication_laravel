@@ -15,9 +15,10 @@
     </head>
     <body>
         <h1>Titulo</h1>
-        @if(10 > 5)
+        @if(3 > 5)
             <p>A condição é TRUE</p>
         @endif
-            
+            <p>{{$nome}}</p>
+
     </body>
 </html>
