@@ -7,7 +7,14 @@ Route::get('/', function () {
     $nome = "Caio";
     $idade = 29;
 
-    return view('welcome', ['nome' => $nome, 'idade' => $idade]);
+    $arr = [1,2,3,4,5];
+
+
+
+    return view('welcome', [
+        'nome' => $nome,
+        'idade' => $idade, 
+        'arr' => $arr]);
 });
 
 

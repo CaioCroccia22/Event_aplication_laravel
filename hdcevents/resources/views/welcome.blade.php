@@ -24,5 +24,10 @@
         @if($nome == "Caio")
         <p>O {{$nome}} tem {{$idade}} anos</p>
         @endif
+
+
+        @for($i = 0; $i < count($arr); $i++)
+        <p>{{$arr[$i]}}</p>
+        @endfor
     </body>
 </html>
