@@ -26,4 +26,6 @@ Route::get('/contatos', function () {
     return view('contact');
 });
 
-
+Route::get('/products', function(){
+    return view('products');
+});
