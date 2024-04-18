@@ -1,46 +1,31 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout.main')
+<!-- Extendendo o layout de main -->
+@section('title', 'HDC Events')
+<!-- Inserindo na section content -->
+@section('content')
+    <h1>Titulo Caio</h1>
+    @if(3 > 5)
+        <p>A condição é TRUE</p>
+    @endif
+    <p>{{$nome}}</p>
 
-        <title>Hello Laravel</title>
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-
-        <!-- Styles -->
-        
-    </head>
-    <body>
-        <h1>Titulo</h1>
-        @if(3 > 5)
-            <p>A condição é TRUE</p>
-        @endif
-            <p>{{$nome}}</p>
-
-
-        @if($nome == "Caio")
+    @if($nome == "Caio")
         <p>O {{$nome}} tem {{$idade}} anos</p>
-        @endif
+    @endif
 
-
-        @for($i = 0; $i < count($arr); $i++)
+    @for($i = 0; $i < count($arr); $i++)
         <p>{{$arr[$i]}}</p>
-        @endfor
+    @endfor
 
+    @php
+        $name = "Caio Croccia";
+        echo $name;
+    @endphp
 
-        @php
-            $name = "Caio Croccia";
-            echo $name;
-        @endphp
-
-        @foreach($nomes as $nome)
+    @foreach($nomes as $nome)
         <p>{{$loop -> index}}</p>
         <p>{{$nome}}</p>
-        @endforeach
+    @endforeach
 
-        {{-- Este é o comentário do blade --}}
-    </body>
-</html>
+    {{-- Este é o comentário do blade --}}
+@endsection
